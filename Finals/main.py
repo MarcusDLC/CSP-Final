@@ -1,7 +1,11 @@
 import random
+import Words from hangman_words
+
+#Wordlist that computer chooses a word randomly- Sebastian M || 
+ 
 
 #Hangman Art - Marcus D
-escii_art = {0: ("   ",
+ascii_art = {0: ("   ",
                  "   ",    
                  "   ",),
              1: (" o ",
@@ -24,40 +28,54 @@ escii_art = {0: ("   ",
                  "/ \\",)}
 
 
+#wordbank and selected word - sebastian
+wordBank=["monitor","functions","fan","sdcard","software","hardware","programming","python","expressions","loops"]
+selected_Word ="placeholder" # this is going to be answer 
 
-#Wordlist that computer chooses a word randomly- Sebastian M || 
-wordBank=["womp","hawktuah","hello","sigma"]
-selected_Word ="placeholder"
-rand = random.randint(1,4)
-
-if rand == 1:
-    selected_Word = "womp"
-elif rand ==2:
-    selected_Word = "hawktuah" #"selected_Word" is the var for the randomly generated word that is to be guessed
-elif rand ==3:
-    woselected_Wordrd = "hello"
-elif rand ==4:
-    selected_Word = "sigma"
-
-#Show man based of amount of wrong guesses - Marcus D
+##Show man based of amount of wrong guesses - Marcus D
 print("*************")
 def hang_man(wrong_guesses):
-  for line in escii_art:
+  for line in ascii_art:
     print(line)
 print("*************")
 
-#Generate word - Sebastian
+#List of variables - Marcus D
+def main():
+   selected_Word = random.choice(wordBank)
+   hint = ["_"] * selected_Word 
+   wrong_guesses = 0
+   guessed_letters = set()
+   Running = True
+
+   while Running == True:
+      hang_man(wrong_guesses)
+      lines(hint)
+      guess = input("Enter a letter:").lower()
+
+      if guess in selected_Word:
+         
+         
+    
 
 
 #Show line for each letter in the random word "_" - William M 
+        Length = len(
+  selected_Word
+        )
+        print("_ " * Length)
+    
 
 
 #Checks if the letter exists in the word - William M
 
-#Win/lose statement - Ryker R 
-winOrLose = "Win" 
-
-if winOrLose == "Win": 
+#What is it? I finished and am trying to help here but how do you even check for letters? What do you mean and where?
+#im still trying to figure out the other one, are we just using a set word bank?
+#will the final one use a set wordbank? Yea we can just find one off the internet, but I'll ask if we can, if not, we can use a small list
+#'requirements are: 
+#A variable
+#2 Functions
+#A conditional -- did yall see what the teacher did? look at the board we need to make a variable for letters.
+#I GOT IT WE NEED TO MAKE THE USERINPUT INTO A VAARI AND CHECK IF ITS IN Selectedword
     print ("YOU WIN!")
 else: print("You Lose!")
 #Show the answer whether you win or lose - Ryker R
