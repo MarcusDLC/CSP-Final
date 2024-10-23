@@ -63,10 +63,10 @@ def main():
   selected_Word
         )
         print("_ " * Length)
-    
-
-
 #Checks if the letter exists in the word - William M
+
+if
+
 
 #What is it? I finished and am trying to help here but how do you even check for letters? What do you mean and where?
 #im still trying to figure out the other one, are we just using a set word bank?
@@ -75,7 +75,14 @@ def main():
 #A variable
 #2 Functions
 #A conditional -- did yall see what the teacher did? look at the board we need to make a variable for letters.
-#I GOT IT WE NEED TO MAKE THE USERINPUT INTO A VAARI AND CHECK IF ITS IN Selectedword
+#I GOT IT WE NEED TO MAKE THE USERINPUT INTO A VAARI AND CHECK IF ITS IN Selectedword FAX 
+#where is the userinput? IDK Line CHAT LET ME COOK NOW :fire:  :fire: marcus save our stuff
+
+#what happened to my code down here
+   
+   
+   
+   
     print ("YOU WIN!")
 else: print("You Lose!")
 #Show the answer whether you win or lose - Ryker R
