@@ -29,11 +29,9 @@ ascii_art = {0: ("   ",
 wordBank = ["monitor","functions","fan","sdcard","software","hardware","programming","python","expressions","loops"]
 
 ##Show man based of amount of wrong guesses - Marcus D
-print("*************")
 def hang_man(wrong_guesses):
   for line in ascii_art[wrong_guesses]:
     print(line)
-print("*************")
 
 #Show line for each letter in the random word "_" - William M 
 def lines(hint):
