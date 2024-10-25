@@ -33,7 +33,7 @@ def hang_man(wrong_guesses):
   for line in ascii_art[wrong_guesses]:
     print(line)
 
-#Show line for each letter in the random word "_" - William M 
+#Mechanism of lines for the start of the game "_" - William M 
 def lines(hint):
    print(" ".join(hint))
 
@@ -55,12 +55,12 @@ def main():
       lines(hint)
       guess = input("Enter a letter: ").lower()
 
-#Makes sure the input is a single letter - Marcus D.
+#Makes sure the input is a single letter - Group
       if len(guess) != 1 or not guess.isalpha():
          print("Input is invalid.")
          continue
 
-#Makes sure the guess doesn't count in the set of guessed letters.
+#Makes sure the guess doesn't count in the set of guessed letters. - Group
       
       if guess in guessed_letters:
         print(f"{guess} was already guessed. Try another input")
