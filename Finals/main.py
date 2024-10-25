@@ -55,7 +55,7 @@ def main():
    while Running == True:
       hang_man(wrong_guesses)
       lines(hint)
-      guess = input("Enter a letter:").lower()
+      guess = input("Enter a letter: ").lower()
 
 #Makes sure the input is a single letter - Marcus D.
       if len(guess) != 1 or not guess.isalpha():
@@ -82,7 +82,7 @@ def main():
            hang_man(wrong_guesses)
            solution(selected_Word)
            print("YOU WIN!")
-           Running - False
+           Running = False
 
       elif wrong_guesses >= 6:
            hang_man(wrong_guesses)
