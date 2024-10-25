@@ -87,6 +87,6 @@ def main():
            solution(selected_Word)
            print("You lose. :(")
            Running = False 
-
+#Main function call that tells the computer the program needs to wait for inputs and give specific details. Basically a single-player game mechanism - Group
 if __name__ == "__main__":
     main()
