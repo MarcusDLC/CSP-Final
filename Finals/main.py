@@ -31,7 +31,7 @@ wordBank = ["monitor","functions","fan","sdcard","software","hardware","programm
 ##Show man based of amount of wrong guesses - Marcus D
 print("*************")
 def hang_man(wrong_guesses):
-  for line in ascii_art:
+  for line in ascii_art[wrong_guesses]:
     print(line)
 print("*************")
 
@@ -58,39 +58,37 @@ def main():
       guess = input("Enter a letter:").lower()
 
 #Makes sure the input is a single letter - Marcus D.
-      if len(guess) != 1 or not guess.isalpha:
+      if len(guess) != 1 or not guess.isalpha():
          print("Input is invalid.")
          continue
 
-#Makes sure the guess doesn't add up in the  
+#Makes sure the guess doesn't count in the set of guessed letters.
       
       if guess in guessed_letters:
-        print(f"{guess} was already guessed")
+        print(f"{guess} was already guessed. Try another input")
         continue
+      
+      guessed_letters.add(guess)
       
 #Checks if the letter exists in the word - William M 
       if guess in selected_Word: 
             for i in range(len(selected_Word)):
                 if selected_Word[i] == guess: 
                     hint[i]= guess
-            else:
-                wrong_guesses +=1
+      else:
+        wrong_guesses +=1
 #Win/Lose statement for whether you win or lose the game - Ryker R
       if "_" not in hint:
            hang_man(wrong_guesses)
            solution(selected_Word)
            print("YOU WIN!")
            Running - False
-      elif wrong_guesses >= len(hang_man) - 1:
+
+      elif wrong_guesses >= 6:
            hang_man(wrong_guesses)
            solution(selected_Word)
            print("You lose. :(")
            Running = False 
 
-
-
-
-
-
-
-
+if __name__ == "__main__":
+    main()
