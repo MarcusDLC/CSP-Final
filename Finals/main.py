@@ -57,7 +57,7 @@ def main():
 
 #Makes sure the input is a single letter - Group
       if len(guess) != 1 or not guess.isalpha():
-         print("Input is invalid.")
+         print("Input is invalid. Please try again")
          continue
 
 #Makes sure the guess doesn't count in the set of guessed letters. - Group
