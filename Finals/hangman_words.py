@@ -1,4 +1,4 @@
-Words = ["apple","cheese","computer","teacher","idyllic","pear","milk","keyboard","pencil"
+wordBank = ["apple","cheese","computer","teacher","idyllic","pear","milk","keyboard","pencil"
          ,"positive","rambutan","yogurt","mouse","notebook","exhilaration","kiwi","butter"
          ,"motherboard","chromebook","enthralled","banana","whey","ram","desk","vivacious"
          ,"octopus","supermarket","gloves","yellow","couch","rabbit","hospital","pants"

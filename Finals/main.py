@@ -26,7 +26,14 @@ ascii_art = {0: ("   ",
 
 
 #Wordbank - Sebastian
-wordBank = ["monitor","functions","fan","sdcard","software","hardware","programming","python","expressions","loops"]
+wordBank = ["apple","cheese","computer","teacher","idyllic","pear","milk","keyboard","pencil"
+         ,"positive","rambutan","yogurt","mouse","notebook","exhilaration","kiwi","butter"
+         ,"motherboard","chromebook","enthralled","banana","whey","ram","desk","vivacious"
+         ,"octopus","supermarket","gloves","yellow","couch","rabbit","hospital","pants"
+         ,"blue","chair","doe","school","shoes","red","painting","jellyfish","church"
+         ,"shirt","green","table","guitar","grandma","badminton","skin","eyes","violin"
+         ,"uncle","basketball","lungs","nose","glockenspiel","mother","baseball","heart"
+         ,"mouth","gobbledegook","pneumonoultramicroscopicsilicovolcanoconiosis","squid"]
 
 ##Show man based of amount of wrong guesses - Marcus D
 def hang_man(wrong_guesses):
@@ -60,7 +67,7 @@ def main():
          print("Input is invalid. Please try again")
          continue
 
-#Makes sure the guess doesn't count in the set of guessed letters. - Group
+#Makes sure the guess doesn't count in the set of guessed letters. - William M
       
       if guess in guessed_letters:
         print(f"{guess} was already guessed. Try another input")
@@ -87,6 +94,6 @@ def main():
            solution(selected_Word)
            print("You lose. :(")
            Running = False 
-#Main function call that tells the computer the program needs to wait for inputs and give specific details. Basically a single-player game mechanism - Group
+#Main function call that tells the computer the program needs to wait for inputs and give specific details. Basically a single-player game mechanism - Marcus D
 if __name__ == "__main__":
     main()
